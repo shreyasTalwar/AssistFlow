@@ -127,9 +127,9 @@ Create a `server/.env` file in the `server/` directory:
 ### `server/.env`
 ```env
 PORT=5000
-DATABASE_URL="postgresql://neondb_owner:YOUR_NEON_PASSWORD@ep-raspy-butterfly-ay1nx2d8-pooler.c-5.us-east-2.aws.neon.tech/neondb?sslmode=require&connect_timeout=30"
+DATABASE_URL="postgresql://your_user:your_password@your-host.neon.tech/neondb?sslmode=require&connect_timeout=30"
 NODE_ENV=development
-JWT_SECRET=super-secret-jwt-key-for-ai-support-platform
+JWT_SECRET=your_jwt_secret_key
 
 # Clerk Auth
 CLERK_PUBLISHABLE_KEY=pk_test_YOUR_CLERK_PUBLISHABLE_KEY
@@ -137,7 +137,7 @@ CLERK_PUBLISHABLE_KEY=pk_test_YOUR_CLERK_PUBLISHABLE_KEY
 # Pinecone Cloud Vector Index
 PINECONE_API_KEY=pcsk_YOUR_PINECONE_API_KEY
 PINECONE_INDEX=ai-customer-support
-PINECONE_HOST=https://ai-customer-support-ws2gr2a.svc.aped-4627-b74a.pinecone.io
+PINECONE_HOST=https://your-index-host.svc.pinecone.io
 
 # Mistral AI
 MISTRAL_API_KEY=YOUR_MISTRAL_API_KEY
